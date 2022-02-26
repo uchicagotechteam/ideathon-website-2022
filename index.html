@@ -42,16 +42,31 @@
     h2 {
       font-family: Oswald;
     }
+    .page {
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        }
+      h1 {
+        font-family: Lexographer;
+      }
+      h2 {
+        font-family: Oswald;
+      }
+      h2 {
+          font-family: Anonymous Clippings;
+          font-size: 2rem;
+      }
   </style>
 </head>
-
-<body style="background-image: url('./images/parchment.jpeg'); background-size: cover">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-    <div class="container">
-      <a class="navbar-brand" href="#">HOME</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <body
+    style="background-image: url('./parchment.jpeg'); background-size: cover"
+  >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">HOME</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="nav-links collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -74,58 +89,71 @@
     </div>
   </nav>
 
-  <!-- Header -->
-  <h2 class="text-center mt-3">UNIVERSITY of CHICAGO</h2>
-  <h1 class="text-center" style="font-size: 6rem">
-    TechTeam Ideathon 2022
-  </h1>
-  <h2 class="text-center">April 10-11, 2022</h2>
-  <h2 class="text-center" style="font-size: 1.5rem">Conceptualize the <a style="color: red;"
-      href="https://docs.google.com/forms/d/e/1FAIpQLSeLGFSNjlDWOqyfhrAUZM7hzBpDQf-BRcIZwerOCuZh-HlkvA/viewform">future</a>
-    with us.</h2>
-  <div class="content">
-    <div class="leftdiv" style="margin-left: 50; float: left; width: 50%; font-size:1.5vw;">
-      <br>
-      <h2><em>What Is It?</em></h2>
-      <p>Join us for 2 days (April 10 - 11) where you and your team can identify and
-        propose creative solutions to some of the major issues in tech. these solutions could take the form of a
-        government policy/tax/subsidy,
-        app, program, educational class–anything! absolutely feel free to think outside the box! </p>
-      <p>At the end of the Ideathon, your team will submit a slideshow presentation
-        and a 3 minute recorded video of an elevator pitch for the problem you are addressing and your solution. we will
-        provide detailed
-        guidelines for what we are looking for in your slide deck. </p>
-      <h2><em>Who Is It For?</em></h2>
-      <p>Anyone who attends the University of Chicago! we want to create an open
-        space for discussion and thoughtful collaboration across all majors and schools. </p>
-      <p>We are asking for teams of 2-4 students. At the time of registration, you
-        may register as a team or as an individual. during the ideathon, we will match individuals to form teams. </p>
-      <h2><em>Where Is It?</em></h2>
-      <p>It’s completely virtual! in the coming weeks, we will release an agenda
-        with speakers and events–all of which will happen on Zoom. all attendees will join a Slack channel to facilitate
-        real-time updates during
-        the event.</p>
-      <h2><em>Tell Me More</em></h2>
-      <p>No technical or coding skills necessary! we will have $2500 worth of prizes
-        for the following winning categories: best overall, best design, best presentation, most creative, most
-        uchicago, fan
-        favorite! Grubhub vouchers will also be given to all attendees! </p>
-      </p>
-      <hr>
-      <p>Fill out our <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeLGFSNjlDWOqyfhrAUZM7hzBpDQf-BRcIZwerOCuZh-HlkvA/viewform">interest
-          form</a> to be notified of latest updates and for the registration form!</p>
-    </div> <!-- leftdiv -->
-    <div class="globe" style="float: right; width: 50%; height: 600px; width: 500px; margin-right: 50;">
-      <canvas id='rotatingGlobe' width='400' height='400' style='width: 400px; height: 400px; cursor: move;'></canvas>
-      <script type='text/javascript' src='./assets/planet.js'></script>
-    </div> <!-- globe -->
-  </div> <!-- content -->
-  <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-</body>
+    <!-- Header -->
+    <div class="page">
+    <h2 class="text-center mt-3" style="font-family: 'Oswald';"> UNIVERSITY of CHICAGO</h2>
+    <h1 class="text-center" style="font-size: 4rem; font-weight: bold">
+      TechTeam Ideathon 2022
+    </h1>
+    <h2 class="text-center" style="font-family: 'Oswald';"> April 10 - 11, 2022</h2>
+    <p class="text-center" style="font-family: 'Oswald'; font-size: 2rem;">CONCEPTUALIZE THE <a style="color: red;"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeLGFSNjlDWOqyfhrAUZM7hzBpDQf-BRcIZwerOCuZh-HlkvA/viewform">FUTURE</a>
+        WITH US.</p>
+    <br>
+    <div class="content" style="height: 500px;position:relative;">
+        <div class="leftdiv" style="max-height:75%;overflow:auto;margin-left: 50px; float: left; width: 50%; font-family: 'RobotoSerif'; ">
+            <br>
+            <h2 style="font-family: 'Oswald';"><b><em>What Is It?</em></b></h2>
+            <p style="font-size: 1.5vw;">Join us for 2 days (April 10 - 11) where you and your team can identify and
+                propose creative solutions to some
+                of the major issues in tech. these solutions could take the form of a government policy/tax/subsidy,
+                app, program,
+                educational class–anything! absolutely feel free to think outside the box! </p>
+            <p style="font-size: 1.5vw;">At the end of the Ideathon, your team will submit a slideshow presentation
+                and a 3 minute recorded video of an
+                elevator pitch for the problem you are addressing and your solution. we will provide detailed
+                guidelines for what
+                we are looking for in your slide deck. </p>
+            <h2 style="font-family: 'Oswald';"><b><em>Who Is It For?</em></b></h2>
+            <p style="font-size: 1.5vw;">Anyone who attends the University of Chicago! we want to create an open
+                space for discussion and thoughtful
+                collaboration across all majors and schools. </p>
+            <p style="font-size: 1.5vw;">We are asking for teams of 2-4 students. At the time of registration, you
+                may register as a team or as an
+                individual. during the ideathon, we will match individuals to form teams. </p>
+            <h2 style="font-family: 'Oswald';"><b><em>Where Is It?</em></b></h2>
+            <p style="font-size: 1.5vw;">It’s completely virtual! in the coming weeks, we will release an agenda
+                with speakers and events–all of which
+                will happen on Zoom. all attendees will join a Slack channel to facilitate real-time updates during
+                the event.</p>
+            <h2 style="font-family: 'Oswald';"><b><em>Tell Me More</em></b></h2>
+            <p style="font-size: 1.5vw;">No technical or coding skills necessary! we will have $2500 worth of prizes
+                for the following winning
+                categories: best overall, best design, best presentation, most creative, most uchicago, fan
+                favorite! Grubhub
+                vouchers will also be given to all attendees! </p>
+            </p>
+            <hr>
+            <p style="font-size: 1.5vw;">Fill out our <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeLGFSNjlDWOqyfhrAUZM7hzBpDQf-BRcIZwerOCuZh-HlkvA/viewform">interest
+                    form</a>
+                to be notified of latest updates and for the registration form</p>
+        </div> <!-- leftdiv -->
+        <div class="globe" style="float: right; width: 100%; height: 600px; width: 500px; margin-right: 50;">
+            <br>
+            <canvas id='rotatingGlobe' width='400' height='400'
+            style='width: 400px; height: 400px; cursor: move;'></canvas>
+            <script type='text/javascript' src='planet.js'></script>  
+        </div> <!-- globe -->
+    </div> <!-- content -->
+    </div>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </head>
 
 </html>
