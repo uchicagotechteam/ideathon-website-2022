@@ -14,6 +14,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
+    <script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
+    <script type='text/javascript' src='planetaryjs.min.js'></script>  
 
     <title>Ideathon 2022</title>
     <!-- Font -->
@@ -67,9 +70,8 @@
     <h1 class="text-center" style="font-size: 5rem">
       TechTeam Ideathon 2022
     </h1>
-
-    <!-- Globe -->
-    <canvas id='globe' width='500' height='500'></canvas>
+    <canvas id='rotatingGlobe' width='400' height='400'
+        style='width: 400px; height: 400px; cursor: move;'></canvas>
     <script type='text/javascript' src='planet.js'></script>  
     <!-- Bootstrap -->
     <script
