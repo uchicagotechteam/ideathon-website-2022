@@ -11,6 +11,10 @@
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <link href="/assets/mycustomstyles.css" rel="stylesheet">
 
+    <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
+    <script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
+    <script type='text/javascript' src='planetaryjs.min.js'></script>
+
 
     <title>Ideathon 2022</title>
     <style>
@@ -105,6 +109,9 @@
 </head>
 
 <body>
+    <canvas id='globe' width='500' height='500'></canvas>
+    <script type='text/javascript' src='planet.js'></script>
+
     <script src="build/three.min.js"></script>
     <script src="js/libs/stats.min.js"></script>
     <script>
@@ -329,13 +336,11 @@
     </script>
 
     <script>
-
         $(window).load(function () {
             setTimeout(function () {
                 $('#loading').hide();
             }, 2000);
         });
-
     </script>
 </body>
 
