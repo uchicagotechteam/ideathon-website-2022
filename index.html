@@ -50,6 +50,7 @@
       h2 {
         font-family: Bungee-Shade;
         color: #4face6;
+        font-size: 2.5rem;
       }
       h3,
       h4 {
@@ -59,14 +60,19 @@
         background-color: #0e7aa5;
       }
       .globe {
-        width: 90vw;
+        display: none;
       }
       @media (min-width: 480px) {
         .title {
           font-size: 4rem;
         }
         .globe {
+          display: block;
           width: 30vw;
+        }
+        .content {
+          height: 65vh;
+          overflow: auto;
         }
       }
     </style>
@@ -142,48 +148,48 @@
         </h3>
       </div>
       <div class="row mt-3 gx-md-5">
-        <div class="col-md-7" style="height: 60vh; overflow: auto">
-          <h2 style="font-size: 2.5rem">WHAT IS IT?</h2>
-          <p>
+        <div class="col-md-7 content">
+          <h2 class="text-center text-md-start">WHAT IS IT?</h2>
+          <p class="ms-2 ms-md-0">
             Join us for 2 days (April 10–11) where you and your team can
             identify and propose creative solutions to some of the major issues
             in tech. These solutions could take the form of a government
             policy/tax/subsidy, app, program, educational class—anything!
             Absolutely feel free to think outside the box!
           </p>
-          <p>
+          <p class="ms-2 ms-md-0">
             At the end of the Ideathon, your team will submit a slideshow
             presentation and a 3 minute recorded video of an elevator pitch for
             the problem you are addressing and your solution. We will provide
             detailed guidelines for what we are looking for in your slide deck.
           </p>
-          <h2 style="font-size: 2.5rem">WHO IS IT FOR?</h2>
-          <p>
+          <h2 class="text-center text-md-start">WHO IS IT FOR?</h2>
+          <p class="ms-2 ms-md-0">
             Anyone who attends the University of Chicago! We want to create an
             open space for discussion and thoughtful collaboration across all
             majors and schools.
           </p>
-          <p>
+          <p class="ms-2 ms-md-0">
             We are asking for teams of 2-4 students. At the time of
             registration, you may register as a team or as an individual. During
             the ideathon, we will match individuals to form teams.
           </p>
-          <h2 style="font-size: 2.5rem">WHERE IS IT?</h2>
-          <p>
+          <h2 class="text-center text-md-start">WHERE IS IT?</h2>
+          <p class="ms-2 ms-md-0">
             It’s completely virtual! in the coming weeks, we will release an
             agenda with speakers and events—all of which will happen on Zoom.
             All attendees will join a Slack channel to facilitate real-time
             updates during the event.
           </p>
-          <h2 style="font-size: 2.5rem">TELL ME MORE</h2>
-          <p>
+          <h2 class="text-center text-md-start">TELL ME MORE</h2>
+          <p class="ms-2 ms-md-0">
             No technical or coding skills necessary! We will have $2500 worth of
             prizes for the following winning categories: best overall, best
             design, best presentation, most creative, most UChicago, fan
             favorite! GrubHub vouchers will also be given to all attendees!
           </p>
           <hr />
-          <p>
+          <p class="ms-2 ms-md-0">
             Fill out our
             <a
               style="color: red"
@@ -192,9 +198,10 @@
             >to be notified of latest updates and for the registration form!
           </p>
         </div>
+        <!-- Globe -->
         <div class="col-md-4">
           <canvas
-            class="globe"
+            class="globe ms-5"
             id="rotatingGlobe"
             style="cursor: move"
           ></canvas>
