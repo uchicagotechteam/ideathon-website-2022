@@ -64,6 +64,21 @@
       .globe {
         display: none;
       }
+      .caption {
+        color: transparent;
+        color: #FFFFFF;
+        background-size: 0% 50%;
+        text-align: center;
+      }
+      .caption:hover {
+        background-position: center;
+        background-size: 50% 100%;
+        background-image: linear-gradient(#26f478, #26f478);
+        display: inline;
+        background-repeat: no-repeat;
+        transition: all 500ms ease-in-out;
+        color: black;
+      }      
       @media (min-width: 480px) {
         .title {
           font-size: 4rem;
@@ -142,7 +157,7 @@
         <h1 class="text-center title glitch" style="font-size: 3rem">
           TECHTEAM IDEATHON 2022
         </h1>
-        <h3 class="text-center">
+        <h3 class="caption">
           APRIL 22–24, 2022. CONCEPTUALIZE THE
           <a style="color: red" href="https://forms.gle/imvFVagaS8inJ9h86"
             >FUTURE</a
