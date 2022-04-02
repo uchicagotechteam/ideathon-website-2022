@@ -17,10 +17,6 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <!-- Planetary.js -->
-    <script type="text/javascript" src="./assets/d3.v3.min.js"></script>
-    <script type="text/javascript" src="./assets/topojson.v1.min.js"></script>
-    <script type="text/javascript" src="./assets/planetaryjs.min.js"></script>
 
     <link rel="stylesheet" href="css/glitch.css" />
 
@@ -47,7 +43,7 @@
       h1,
       h2 {
         font-family: Bungee-Shade;
-        color: #26f478;
+        color: white;
       }
       h2 {
         font-family: Bungee-Shade;
@@ -61,38 +57,18 @@
       .nav-hover:hover {
         background-color: #0e7aa5;
       }
-      .globe {
-        display: none;
+      .register:hover {
+        color: white !important;
       }
-      .captionContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 3vw;
-        padding-bottom: 2vw;
+      .border {
+        border-color: white !important;
       }
-      .caption {
-        color: transparent;
-        color: #ffffff;
-        background-size: 0% 100%;
-        text-align: center;
-      }
-      .caption:hover {
-        background-position: center;
-        background-size: 100% 100%;
-        background-image: linear-gradient(#26f478, #26f478);
-        display: inline;
-        background-repeat: no-repeat;
-        transition: all 500ms ease-in-out;
-        color: black;
+      .border:hover {
+        border-color: #26f478 !important;
       }
       @media (min-width: 480px) {
         .title {
           font-size: 4rem;
-        }
-        .globe {
-          width: 100%;
-          display: block;
         }
         .content {
           height: 60vh;
@@ -128,7 +104,7 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item mx-md-2">
               <a
-                class="nav-link nav-hover"
+                class="nav-link nav-hover register"
                 style="color: red"
                 href="https://forms.gle/imvFVagaS8inJ9h86"
                 ><h4>REGISTER HERE</h4></a
@@ -166,12 +142,32 @@
     <!-- Header -->
     <div class="container">
       <div class="row">
-        <div class="captionContainer">
-          <h1 class="text-center caption" style="font-size: 3rem;">
-            JUDGES AND MENTORS
-          </h1>  
+        <h1 class="text-center mt-3 title glitch" style="font-size: 3rem">
+          JUDGES & MENTORS
+        </h1>
+      </div>
+      <div class="row my-4">
+        <div class="col-12">
+          <div class="border border-5 p-4 event">
+            <h2>Judges & Mentors include:</h2>
+            <h4>
+              Angela Li: Sociology PhD candidate at Princeton University,
+              UChicago alum & TechTeam 2017-2018 Co-Chair
+            </h4>
+            <h4>
+              Julia Oran: Software engineer at Code for America, UChicago alum &
+              TechTeam 2017-2018 Co-Chair
+            </h4>
+            <h4>
+              Nicholas Marchio: Data scientist at UChicago's Mansueto Institute
+              for Urban Innovation
+            </h4>
+            <h3 class="pt-3" style="color: red">
+              More mentors & judges will be announced soon!
+            </h3>
+          </div>
         </div>
-      </div>      
+      </div>
     </div>
     <!-- Bootstrap -->
     <script
